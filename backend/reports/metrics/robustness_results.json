@@ -1,0 +1,64 @@
+{
+  "mcar_rates": {
+    "0": {
+      "mean": {
+        "accuracy": 0.2635,
+        "macro_recall": 0.2616,
+        "macro_f1": 0.2574
+      },
+      "median": {
+        "accuracy": 0.2635,
+        "macro_recall": 0.2616,
+        "macro_f1": 0.2574
+      }
+    },
+    "10": {
+      "mean": {
+        "accuracy": 0.2789,
+        "macro_recall": 0.2764,
+        "macro_f1": 0.27
+      },
+      "median": {
+        "accuracy": 0.2897,
+        "macro_recall": 0.2872,
+        "macro_f1": 0.281
+      }
+    },
+    "20": {
+      "mean": {
+        "accuracy": 0.2958,
+        "macro_recall": 0.2932,
+        "macro_f1": 0.2855
+      },
+      "median": {
+        "accuracy": 0.3005,
+        "macro_recall": 0.2977,
+        "macro_f1": 0.2896
+      }
+    },
+    "30": {
+      "mean": {
+        "accuracy": 0.2773,
+        "macro_recall": 0.2744,
+        "macro_f1": 0.2625
+      },
+      "median": {
+        "accuracy": 0.2835,
+        "macro_recall": 0.2804,
+        "macro_f1": 0.2682
+      }
+    }
+  },
+  "group_omissions": {
+    "All_ECG_Missing": {
+      "accuracy": 0.2465,
+      "macro_recall": 0.2421,
+      "macro_f1": 0.1992
+    },
+    "All_Clinical_Missing": {
+      "accuracy": 0.2604,
+      "macro_recall": 0.2571,
+      "macro_f1": 0.2318
+    }
+  }
+}

@@ -1,0 +1,13 @@
+Feature Group,Model,Accuracy,Macro F1,ROC-AUC
+Clinical & Laboratory Only (8 feats),Random Forest,25.42%,0.2440,0.5173
+Clinical & Laboratory Only (8 feats),Logistic Regression,24.65%,0.2277,0.5018
+Clinical & Laboratory Only (8 feats),Extra Trees,28.35%,0.2739,0.5278
+Clinical & Laboratory Only (8 feats),XGBoost,24.19%,0.2405,0.4984
+ECG-Derived Numerical Only (11 feats),Random Forest,25.12%,0.2444,0.4945
+ECG-Derived Numerical Only (11 feats),Logistic Regression,24.65%,0.2364,0.4880
+ECG-Derived Numerical Only (11 feats),Extra Trees,25.73%,0.2471,0.5132
+ECG-Derived Numerical Only (11 feats),XGBoost,24.35%,0.2421,0.5048
+Combined Early Fusion (19 feats),Random Forest,26.35%,0.2574,0.5105
+Combined Early Fusion (19 feats),Logistic Regression,24.19%,0.2344,0.4894
+Combined Early Fusion (19 feats),Extra Trees,25.42%,0.2427,0.5026
+Combined Early Fusion (19 feats),XGBoost,24.19%,0.2407,0.5072

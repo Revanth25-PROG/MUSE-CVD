@@ -1,0 +1,464 @@
+{
+  "Dummy Classifier": {
+    "model_name": "Dummy Classifier",
+    "accuracy": 0.2727,
+    "macro_precision": 0.2733,
+    "macro_recall": 0.2729,
+    "macro_f1": 0.2728,
+    "roc_auc_ovr": 0.5151,
+    "per_class_metrics": {
+      "Abnormal_Heartbeat": {
+        "precision": 0.2652,
+        "recall": 0.2927,
+        "f1_score": 0.2783,
+        "support": 164
+      },
+      "Myocardial_Infarction": {
+        "precision": 0.3056,
+        "recall": 0.2857,
+        "f1_score": 0.2953,
+        "support": 154
+      },
+      "Normal": {
+        "precision": 0.2807,
+        "recall": 0.2874,
+        "f1_score": 0.284,
+        "support": 167
+      },
+      "Post_MI_History": {
+        "precision": 0.2418,
+        "recall": 0.2256,
+        "f1_score": 0.2334,
+        "support": 164
+      }
+    },
+    "confusion_matrix": [
+      [
+        48,
+        31,
+        41,
+        44
+      ],
+      [
+        35,
+        44,
+        41,
+        34
+      ],
+      [
+        48,
+        33,
+        48,
+        38
+      ],
+      [
+        50,
+        36,
+        41,
+        37
+      ]
+    ],
+    "classes": [
+      "Abnormal_Heartbeat",
+      "Myocardial_Infarction",
+      "Normal",
+      "Post_MI_History"
+    ]
+  },
+  "Logistic Regression": {
+    "model_name": "Logistic Regression",
+    "accuracy": 0.2419,
+    "macro_precision": 0.2366,
+    "macro_recall": 0.2397,
+    "macro_f1": 0.2344,
+    "roc_auc_ovr": 0.4894,
+    "per_class_metrics": {
+      "Abnormal_Heartbeat": {
+        "precision": 0.2472,
+        "recall": 0.2683,
+        "f1_score": 0.2573,
+        "support": 164
+      },
+      "Myocardial_Infarction": {
+        "precision": 0.2022,
+        "recall": 0.1169,
+        "f1_score": 0.1481,
+        "support": 154
+      },
+      "Normal": {
+        "precision": 0.2512,
+        "recall": 0.3054,
+        "f1_score": 0.2757,
+        "support": 167
+      },
+      "Post_MI_History": {
+        "precision": 0.2458,
+        "recall": 0.2683,
+        "f1_score": 0.2566,
+        "support": 164
+      }
+    },
+    "confusion_matrix": [
+      [
+        44,
+        24,
+        49,
+        47
+      ],
+      [
+        48,
+        18,
+        50,
+        38
+      ],
+      [
+        43,
+        23,
+        51,
+        50
+      ],
+      [
+        43,
+        24,
+        53,
+        44
+      ]
+    ],
+    "classes": [
+      "Abnormal_Heartbeat",
+      "Myocardial_Infarction",
+      "Normal",
+      "Post_MI_History"
+    ]
+  },
+  "Decision Tree": {
+    "model_name": "Decision Tree",
+    "accuracy": 0.245,
+    "macro_precision": 0.2362,
+    "macro_recall": 0.2437,
+    "macro_f1": 0.2292,
+    "roc_auc_ovr": 0.5081,
+    "per_class_metrics": {
+      "Abnormal_Heartbeat": {
+        "precision": 0.2095,
+        "recall": 0.189,
+        "f1_score": 0.1987,
+        "support": 164
+      },
+      "Myocardial_Infarction": {
+        "precision": 0.2039,
+        "recall": 0.1364,
+        "f1_score": 0.1634,
+        "support": 154
+      },
+      "Normal": {
+        "precision": 0.2589,
+        "recall": 0.1737,
+        "f1_score": 0.2079,
+        "support": 167
+      },
+      "Post_MI_History": {
+        "precision": 0.2727,
+        "recall": 0.4756,
+        "f1_score": 0.3467,
+        "support": 164
+      }
+    },
+    "confusion_matrix": [
+      [
+        31,
+        37,
+        27,
+        69
+      ],
+      [
+        39,
+        21,
+        29,
+        65
+      ],
+      [
+        39,
+        25,
+        29,
+        74
+      ],
+      [
+        39,
+        20,
+        27,
+        78
+      ]
+    ],
+    "classes": [
+      "Abnormal_Heartbeat",
+      "Myocardial_Infarction",
+      "Normal",
+      "Post_MI_History"
+    ]
+  },
+  "Random Forest": {
+    "model_name": "Random Forest",
+    "accuracy": 0.2712,
+    "macro_precision": 0.2764,
+    "macro_recall": 0.2698,
+    "macro_f1": 0.2687,
+    "roc_auc_ovr": 0.5101,
+    "per_class_metrics": {
+      "Abnormal_Heartbeat": {
+        "precision": 0.2553,
+        "recall": 0.2927,
+        "f1_score": 0.2727,
+        "support": 164
+      },
+      "Myocardial_Infarction": {
+        "precision": 0.3196,
+        "recall": 0.2013,
+        "f1_score": 0.247,
+        "support": 154
+      },
+      "Normal": {
+        "precision": 0.2759,
+        "recall": 0.3353,
+        "f1_score": 0.3027,
+        "support": 167
+      },
+      "Post_MI_History": {
+        "precision": 0.2547,
+        "recall": 0.25,
+        "f1_score": 0.2523,
+        "support": 164
+      }
+    },
+    "confusion_matrix": [
+      [
+        48,
+        19,
+        58,
+        39
+      ],
+      [
+        48,
+        31,
+        36,
+        39
+      ],
+      [
+        48,
+        21,
+        56,
+        42
+      ],
+      [
+        44,
+        26,
+        53,
+        41
+      ]
+    ],
+    "classes": [
+      "Abnormal_Heartbeat",
+      "Myocardial_Infarction",
+      "Normal",
+      "Post_MI_History"
+    ]
+  },
+  "Extra Trees": {
+    "model_name": "Extra Trees",
+    "accuracy": 0.2589,
+    "macro_precision": 0.2474,
+    "macro_recall": 0.2555,
+    "macro_f1": 0.2425,
+    "roc_auc_ovr": 0.5022,
+    "per_class_metrics": {
+      "Abnormal_Heartbeat": {
+        "precision": 0.2474,
+        "recall": 0.2927,
+        "f1_score": 0.2682,
+        "support": 164
+      },
+      "Myocardial_Infarction": {
+        "precision": 0.1905,
+        "recall": 0.0779,
+        "f1_score": 0.1106,
+        "support": 154
+      },
+      "Normal": {
+        "precision": 0.2743,
+        "recall": 0.3892,
+        "f1_score": 0.3218,
+        "support": 167
+      },
+      "Post_MI_History": {
+        "precision": 0.2774,
+        "recall": 0.2622,
+        "f1_score": 0.2696,
+        "support": 164
+      }
+    },
+    "confusion_matrix": [
+      [
+        48,
+        20,
+        59,
+        37
+      ],
+      [
+        44,
+        12,
+        54,
+        44
+      ],
+      [
+        55,
+        16,
+        65,
+        31
+      ],
+      [
+        47,
+        15,
+        59,
+        43
+      ]
+    ],
+    "classes": [
+      "Abnormal_Heartbeat",
+      "Myocardial_Infarction",
+      "Normal",
+      "Post_MI_History"
+    ]
+  },
+  "Gradient Boosting": {
+    "model_name": "Gradient Boosting",
+    "accuracy": 0.2357,
+    "macro_precision": 0.2369,
+    "macro_recall": 0.2351,
+    "macro_f1": 0.2351,
+    "roc_auc_ovr": 0.4974,
+    "per_class_metrics": {
+      "Abnormal_Heartbeat": {
+        "precision": 0.2204,
+        "recall": 0.25,
+        "f1_score": 0.2343,
+        "support": 164
+      },
+      "Myocardial_Infarction": {
+        "precision": 0.2441,
+        "recall": 0.2013,
+        "f1_score": 0.2206,
+        "support": 154
+      },
+      "Normal": {
+        "precision": 0.2363,
+        "recall": 0.2575,
+        "f1_score": 0.2464,
+        "support": 167
+      },
+      "Post_MI_History": {
+        "precision": 0.2468,
+        "recall": 0.2317,
+        "f1_score": 0.239,
+        "support": 164
+      }
+    },
+    "confusion_matrix": [
+      [
+        41,
+        28,
+        63,
+        32
+      ],
+      [
+        48,
+        31,
+        34,
+        41
+      ],
+      [
+        53,
+        28,
+        43,
+        43
+      ],
+      [
+        44,
+        40,
+        42,
+        38
+      ]
+    ],
+    "classes": [
+      "Abnormal_Heartbeat",
+      "Myocardial_Infarction",
+      "Normal",
+      "Post_MI_History"
+    ]
+  },
+  "XGBoost": {
+    "model_name": "XGBoost",
+    "accuracy": 0.2481,
+    "macro_precision": 0.2457,
+    "macro_recall": 0.2469,
+    "macro_f1": 0.2446,
+    "roc_auc_ovr": 0.4957,
+    "per_class_metrics": {
+      "Abnormal_Heartbeat": {
+        "precision": 0.2741,
+        "recall": 0.3293,
+        "f1_score": 0.2992,
+        "support": 164
+      },
+      "Myocardial_Infarction": {
+        "precision": 0.2231,
+        "recall": 0.1753,
+        "f1_score": 0.1964,
+        "support": 154
+      },
+      "Normal": {
+        "precision": 0.2337,
+        "recall": 0.2575,
+        "f1_score": 0.245,
+        "support": 167
+      },
+      "Post_MI_History": {
+        "precision": 0.2517,
+        "recall": 0.2256,
+        "f1_score": 0.2379,
+        "support": 164
+      }
+    },
+    "confusion_matrix": [
+      [
+        54,
+        28,
+        53,
+        29
+      ],
+      [
+        44,
+        27,
+        43,
+        40
+      ],
+      [
+        49,
+        34,
+        43,
+        41
+      ],
+      [
+        50,
+        32,
+        45,
+        37
+      ]
+    ],
+    "classes": [
+      "Abnormal_Heartbeat",
+      "Myocardial_Infarction",
+      "Normal",
+      "Post_MI_History"
+    ]
+  }
+}

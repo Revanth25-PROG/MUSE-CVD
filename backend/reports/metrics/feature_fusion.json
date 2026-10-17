@@ -1,0 +1,77 @@
+{
+  "clinical": {
+    "name": "Clinical & Laboratory Only (8 feats)",
+    "models": {
+      "Random Forest": {
+        "accuracy": 0.2542,
+        "macro_f1": 0.244,
+        "roc_auc": 0.5173
+      },
+      "Logistic Regression": {
+        "accuracy": 0.2465,
+        "macro_f1": 0.2277,
+        "roc_auc": 0.5018
+      },
+      "Extra Trees": {
+        "accuracy": 0.2835,
+        "macro_f1": 0.2739,
+        "roc_auc": 0.5278
+      },
+      "XGBoost": {
+        "accuracy": 0.2419,
+        "macro_f1": 0.2405,
+        "roc_auc": 0.4984
+      }
+    }
+  },
+  "ecg": {
+    "name": "ECG-Derived Numerical Only (11 feats)",
+    "models": {
+      "Random Forest": {
+        "accuracy": 0.2512,
+        "macro_f1": 0.2444,
+        "roc_auc": 0.4945
+      },
+      "Logistic Regression": {
+        "accuracy": 0.2465,
+        "macro_f1": 0.2364,
+        "roc_auc": 0.488
+      },
+      "Extra Trees": {
+        "accuracy": 0.2573,
+        "macro_f1": 0.2471,
+        "roc_auc": 0.5132
+      },
+      "XGBoost": {
+        "accuracy": 0.2435,
+        "macro_f1": 0.2421,
+        "roc_auc": 0.5048
+      }
+    }
+  },
+  "combined": {
+    "name": "Combined Early Fusion (19 feats)",
+    "models": {
+      "Random Forest": {
+        "accuracy": 0.2635,
+        "macro_f1": 0.2574,
+        "roc_auc": 0.5105
+      },
+      "Logistic Regression": {
+        "accuracy": 0.2419,
+        "macro_f1": 0.2344,
+        "roc_auc": 0.4894
+      },
+      "Extra Trees": {
+        "accuracy": 0.2542,
+        "macro_f1": 0.2427,
+        "roc_auc": 0.5026
+      },
+      "XGBoost": {
+        "accuracy": 0.2419,
+        "macro_f1": 0.2407,
+        "roc_auc": 0.5072
+      }
+    }
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "predicted_class": "Normal",
+  "confidence": 0.2887,
+  "class_probabilities": {
+    "Abnormal_Heartbeat": 0.2197,
+    "Myocardial_Infarction": 0.2452,
+    "Normal": 0.2887,
+    "Post_MI_History": 0.2464
+  },
+  "top_drivers": [
+    {
+      "feature": "Diastolic_BP",
+      "shap_value": 0.01212,
+      "abs_impact": 0.01212,
+      "direction": "positive"
+    },
+    {
+      "feature": "R_Peak_Amplitude",
+      "shap_value": 0.0077,
+      "abs_impact": 0.0077,
+      "direction": "positive"
+    },
+    {
+      "feature": "QRS_Duration",
+      "shap_value": 0.00505,
+      "abs_impact": 0.00505,
+      "direction": "positive"
+    },
+    {
+      "feature": "Systolic_BP",
+      "shap_value": 0.00489,
+      "abs_impact": 0.00489,
+      "direction": "positive"
+    },
+    {
+      "feature": "PR_Interval",
+      "shap_value": 0.00471,
+      "abs_impact": 0.00471,
+      "direction": "positive"
+    },
+    {
+      "feature": "P_Wave_Duration",
+      "shap_value": -0.00455,
+      "abs_impact": 0.00455,
+      "direction": "negative"
+    },
+    {
+      "feature": "Glucose",
+      "shap_value": -0.00393,
+      "abs_impact": 0.00393,
+      "direction": "negative"
+    },
+    {
+      "feature": "QT_Interval",
+      "shap_value": 0.00385,
+      "abs_impact": 0.00385,
+      "direction": "positive"
+    }
+  ],
+  "all_contributions": [
+    {
+      "feature": "Diastolic_BP",
+      "shap_value": 0.01212,
+      "abs_impact": 0.01212,
+      "direction": "positive"
+    },
+    {
+      "feature": "R_Peak_Amplitude",
+      "shap_value": 0.0077,
+      "abs_impact": 0.0077,
+      "direction": "positive"
+    },
+    {
+      "feature": "QRS_Duration",
+      "shap_value": 0.00505,
+      "abs_impact": 0.00505,
+      "direction": "positive"
+    },
+    {
+      "feature": "Systolic_BP",
+      "shap_value": 0.00489,
+      "abs_impact": 0.00489,
+      "direction": "positive"
+    },
+    {
+      "feature": "PR_Interval",
+      "shap_value": 0.00471,
+      "abs_impact": 0.00471,
+      "direction": "positive"
+    },
+    {
+      "feature": "P_Wave_Duration",
+      "shap_value": -0.00455,
+      "abs_impact": 0.00455,
+      "direction": "negative"
+    },
+    {
+      "feature": "Glucose",
+      "shap_value": -0.00393,
+      "abs_impact": 0.00393,
+      "direction": "negative"
+    },
+    {
+      "feature": "QT_Interval",
+      "shap_value": 0.00385,
+      "abs_impact": 0.00385,
+      "direction": "positive"
+    },
+    {
+      "feature": "Cholesterol",
+      "shap_value": 0.00289,
+      "abs_impact": 0.00289,
+      "direction": "positive"
+    },
+    {
+      "feature": "S_Wave_Amplitude",
+      "shap_value": 0.00226,
+      "abs_impact": 0.00226,
+      "direction": "positive"
+    },
+    {
+      "feature": "T_Wave_Duration",
+      "shap_value": -0.00204,
+      "abs_impact": 0.00204,
+      "direction": "negative"
+    },
+    {
+      "feature": "Troponin",
+      "shap_value": -0.00167,
+      "abs_impact": 0.00167,
+      "direction": "negative"
+    },
+    {
+      "feature": "RR_Interval",
+      "shap_value": -0.00154,
+      "abs_impact": 0.00154,
+      "direction": "negative"
+    },
+    {
+      "feature": "HRV_SDNN",
+      "shap_value": 0.00124,
+      "abs_impact": 0.00124,
+      "direction": "positive"
+    },
+    {
+      "feature": "Age",
+      "shap_value": 0.00112,
+      "abs_impact": 0.00112,
+      "direction": "positive"
+    },
+    {
+      "feature": "HRV_RMSSD",
+      "shap_value": -0.0009,
+      "abs_impact": 0.0009,
+      "direction": "negative"
+    },
+    {
+      "feature": "Gender_Male",
+      "shap_value": 0.00073,
+      "abs_impact": 0.00073,
+      "direction": "positive"
+    },
+    {
+      "feature": "ST_Segment_Level",
+      "shap_value": -0.00052,
+      "abs_impact": 0.00052,
+      "direction": "negative"
+    },
+    {
+      "feature": "Heart_Rate",
+      "shap_value": -0.0001,
+      "abs_impact": 0.0001,
+      "direction": "negative"
+    }
+  ],
+  "disclaimer": "Local explanations explain model weighting, not medical etiology."
+}

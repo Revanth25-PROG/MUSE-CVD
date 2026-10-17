@@ -1,0 +1,23 @@
+{
+  "Uncalibrated Random Forest": {
+    "accuracy": 0.2635,
+    "multiclass_brier_score": 0.7508,
+    "expected_calibration_error_ece": 0.0166,
+    "log_loss": 1.3878,
+    "mean_prediction_entropy": 0.9964
+  },
+  "Platt Sigmoid Calibrated": {
+    "accuracy": 0.2619,
+    "multiclass_brier_score": 0.7503,
+    "expected_calibration_error_ece": 0.0019,
+    "log_loss": 1.387,
+    "mean_prediction_entropy": 0.9993
+  },
+  "Isotonic Calibrated": {
+    "accuracy": 0.2619,
+    "multiclass_brier_score": 0.7491,
+    "expected_calibration_error_ece": 0.0051,
+    "log_loss": 1.3841,
+    "mean_prediction_entropy": 0.9979
+  }
+}

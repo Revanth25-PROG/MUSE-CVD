@@ -1,0 +1,8 @@
+Model,Accuracy,Macro Precision,Macro Recall,Macro F1,ROC-AUC (OvR)
+Dummy Classifier,27.27%,0.2733,0.2729,0.2728,0.5151
+Logistic Regression,24.19%,0.2366,0.2397,0.2344,0.4894
+Decision Tree,24.50%,0.2362,0.2437,0.2292,0.5081
+Random Forest,27.12%,0.2764,0.2698,0.2687,0.5101
+Extra Trees,25.89%,0.2474,0.2555,0.2425,0.5022
+Gradient Boosting,23.57%,0.2369,0.2351,0.2351,0.4974
+XGBoost,24.81%,0.2457,0.2469,0.2446,0.4957

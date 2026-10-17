@@ -1,0 +1,115 @@
+{
+  "total_records": 4327,
+  "feature_counts": {
+    "clinical_features": 7,
+    "ecg_features": 11,
+    "demographic_categorical": 1,
+    "target_classes": 4
+  },
+  "class_distribution": {
+    "Normal": 1113,
+    "Abnormal_Heartbeat": 1092,
+    "Post_MI_History": 1091,
+    "Myocardial_Infarction": 1031
+  },
+  "outlier_summary": {
+    "Age": {
+      "iqr": 27.0,
+      "outlier_count": 0,
+      "outlier_percentage": 0.0
+    },
+    "Heart_Rate": {
+      "iqr": 43.0,
+      "outlier_count": 0,
+      "outlier_percentage": 0.0
+    },
+    "Systolic_BP": {
+      "iqr": 45.0,
+      "outlier_count": 0,
+      "outlier_percentage": 0.0
+    },
+    "Diastolic_BP": {
+      "iqr": 25.0,
+      "outlier_count": 0,
+      "outlier_percentage": 0.0
+    },
+    "Cholesterol": {
+      "iqr": 85.0,
+      "outlier_count": 0,
+      "outlier_percentage": 0.0
+    },
+    "Glucose": {
+      "iqr": 66.0,
+      "outlier_count": 0,
+      "outlier_percentage": 0.0
+    },
+    "Troponin": {
+      "iqr": 1.226,
+      "outlier_count": 0,
+      "outlier_percentage": 0.0
+    },
+    "PR_Interval": {
+      "iqr": 49.0,
+      "outlier_count": 0,
+      "outlier_percentage": 0.0
+    },
+    "QRS_Duration": {
+      "iqr": 44.0,
+      "outlier_count": 0,
+      "outlier_percentage": 0.0
+    },
+    "QT_Interval": {
+      "iqr": 100.0,
+      "outlier_count": 0,
+      "outlier_percentage": 0.0
+    },
+    "P_Wave_Duration": {
+      "iqr": 20.0,
+      "outlier_count": 0,
+      "outlier_percentage": 0.0
+    },
+    "T_Wave_Duration": {
+      "iqr": 40.0,
+      "outlier_count": 0,
+      "outlier_percentage": 0.0
+    },
+    "ST_Segment_Level": {
+      "iqr": 0.349,
+      "outlier_count": 0,
+      "outlier_percentage": 0.0
+    },
+    "RR_Interval": {
+      "iqr": 286.0,
+      "outlier_count": 0,
+      "outlier_percentage": 0.0
+    },
+    "HRV_SDNN": {
+      "iqr": 50.0,
+      "outlier_count": 0,
+      "outlier_percentage": 0.0
+    },
+    "HRV_RMSSD": {
+      "iqr": 43.0,
+      "outlier_count": 0,
+      "outlier_percentage": 0.0
+    },
+    "R_Peak_Amplitude": {
+      "iqr": 1.2,
+      "outlier_count": 0,
+      "outlier_percentage": 0.0
+    },
+    "S_Wave_Amplitude": {
+      "iqr": 1.23,
+      "outlier_count": 0,
+      "outlier_percentage": 0.0
+    }
+  },
+  "correlation_summary": {
+    "max_absolute_correlation": 0.0446,
+    "mean_absolute_correlation": 0.0114,
+    "strongest_pair": [
+      "Heart_Rate",
+      "Troponin"
+    ]
+  }
+}

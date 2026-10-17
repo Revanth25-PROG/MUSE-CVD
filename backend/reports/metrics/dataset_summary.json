@@ -1,0 +1,397 @@
+{
+  "dataset_path": "data/cardiovascular_dataset_cleaned.csv",
+  "row_count": 4327,
+  "column_count": 20,
+  "columns": [
+    "Age",
+    "Gender",
+    "Heart_Rate",
+    "Systolic_BP",
+    "Diastolic_BP",
+    "Cholesterol",
+    "Glucose",
+    "Troponin",
+    "PR_Interval",
+    "QRS_Duration",
+    "QT_Interval",
+    "P_Wave_Duration",
+    "T_Wave_Duration",
+    "ST_Segment_Level",
+    "RR_Interval",
+    "HRV_SDNN",
+    "HRV_RMSSD",
+    "R_Peak_Amplitude",
+    "S_Wave_Amplitude",
+    "Target"
+  ],
+  "categorical_columns": [
+    "Gender",
+    "Target"
+  ],
+  "numerical_columns": [
+    "Age",
+    "Heart_Rate",
+    "Systolic_BP",
+    "Diastolic_BP",
+    "Cholesterol",
+    "Glucose",
+    "Troponin",
+    "PR_Interval",
+    "QRS_Duration",
+    "QT_Interval",
+    "P_Wave_Duration",
+    "T_Wave_Duration",
+    "ST_Segment_Level",
+    "RR_Interval",
+    "HRV_SDNN",
+    "HRV_RMSSD",
+    "R_Peak_Amplitude",
+    "S_Wave_Amplitude"
+  ],
+  "total_missing_values": 0,
+  "missing_per_column": {
+    "Age": 0,
+    "Gender": 0,
+    "Heart_Rate": 0,
+    "Systolic_BP": 0,
+    "Diastolic_BP": 0,
+    "Cholesterol": 0,
+    "Glucose": 0,
+    "Troponin": 0,
+    "PR_Interval": 0,
+    "QRS_Duration": 0,
+    "QT_Interval": 0,
+    "P_Wave_Duration": 0,
+    "T_Wave_Duration": 0,
+    "ST_Segment_Level": 0,
+    "RR_Interval": 0,
+    "HRV_SDNN": 0,
+    "HRV_RMSSD": 0,
+    "R_Peak_Amplitude": 0,
+    "S_Wave_Amplitude": 0,
+    "Target": 0
+  },
+  "duplicate_records": 0,
+  "categorical_summary": {
+    "Gender": {
+      "unique_values": [
+        "Female",
+        "Male"
+      ],
+      "counts": {
+        "Female": 2196,
+        "Male": 2131
+      },
+      "n_unique": 2
+    },
+    "Target": {
+      "unique_values": [
+        "Normal",
+        "Abnormal_Heartbeat",
+        "Post_MI_History",
+        "Myocardial_Infarction"
+      ],
+      "counts": {
+        "Normal": 1113,
+        "Abnormal_Heartbeat": 1092,
+        "Post_MI_History": 1091,
+        "Myocardial_Infarction": 1031
+      },
+      "n_unique": 4
+    }
+  },
+  "target_distribution": {
+    "Normal": {
+      "count": 1113,
+      "percentage": 25.72
+    },
+    "Abnormal_Heartbeat": {
+      "count": 1092,
+      "percentage": 25.24
+    },
+    "Post_MI_History": {
+      "count": 1091,
+      "percentage": 25.21
+    },
+    "Myocardial_Infarction": {
+      "count": 1031,
+      "percentage": 23.83
+    }
+  },
+  "numerical_statistics": {
+    "Age": {
+      "min": 30.0,
+      "max": 84.0,
+      "mean": 57.453,
+      "std": 15.872,
+      "median": 57.0,
+      "q25": 44.0,
+      "q75": 71.0,
+      "skew": -0.01
+    },
+    "Heart_Rate": {
+      "min": 55.0,
+      "max": 139.0,
+      "mean": 97.405,
+      "std": 24.581,
+      "median": 98.0,
+      "q25": 76.0,
+      "q75": 119.0,
+      "skew": -0.02
+    },
+    "Systolic_BP": {
+      "min": 90.0,
+      "max": 179.0,
+      "mean": 134.03,
+      "std": 25.963,
+      "median": 134.0,
+      "q25": 111.0,
+      "q75": 156.0,
+      "skew": 0.026
+    },
+    "Diastolic_BP": {
+      "min": 60.0,
+      "max": 109.0,
+      "mean": 84.379,
+      "std": 14.555,
+      "median": 84.0,
+      "q25": 72.0,
+      "q75": 97.0,
+      "skew": 0.036
+    },
+    "Cholesterol": {
+      "min": 150.0,
+      "max": 319.0,
+      "mean": 234.153,
+      "std": 48.41,
+      "median": 234.0,
+      "q25": 192.0,
+      "q75": 277.0,
+      "skew": 0.013
+    },
+    "Glucose": {
+      "min": 70.0,
+      "max": 199.0,
+      "mean": 134.798,
+      "std": 37.702,
+      "median": 135.0,
+      "q25": 102.0,
+      "q75": 168.0,
+      "skew": -0.002
+    },
+    "Troponin": {
+      "min": 0.001,
+      "max": 2.5,
+      "mean": 1.269,
+      "std": 0.721,
+      "median": 1.285,
+      "q25": 0.661,
+      "q75": 1.886,
+      "skew": -0.043
+    },
+    "PR_Interval": {
+      "min": 120.0,
+      "max": 219.0,
+      "mean": 169.905,
+      "std": 28.641,
+      "median": 171.0,
+      "q25": 145.0,
+      "q75": 194.0,
+      "skew": -0.036
+    },
+    "QRS_Duration": {
+      "min": 70.0,
+      "max": 159.0,
+      "mean": 114.12,
+      "std": 25.879,
+      "median": 114.0,
+      "q25": 92.0,
+      "q75": 136.0,
+      "skew": 0.006
+    },
+    "QT_Interval": {
+      "min": 300.0,
+      "max": 499.0,
+      "mean": 398.727,
+      "std": 57.955,
+      "median": 399.0,
+      "q25": 348.0,
+      "q75": 448.0,
+      "skew": -0.005
+    },
+    "P_Wave_Duration": {
+      "min": 80.0,
+      "max": 119.0,
+      "mean": 99.665,
+      "std": 11.527,
+      "median": 100.0,
+      "q25": 90.0,
+      "q75": 110.0,
+      "skew": -0.018
+    },
+    "T_Wave_Duration": {
+      "min": 120.0,
+      "max": 199.0,
+      "mean": 159.156,
+      "std": 23.158,
+      "median": 159.0,
+      "q25": 139.0,
+      "q75": 179.0,
+      "skew": 0.002
+    },
+    "ST_Segment_Level": {
+      "min": -0.2,
+      "max": 0.5,
+      "mean": 0.151,
+      "std": 0.202,
+      "median": 0.155,
+      "q25": -0.024,
+      "q75": 0.325,
+      "skew": -0.021
+    },
+    "RR_Interval": {
+      "min": 600.0,
+      "max": 1199.0,
+      "mean": 897.764,
+      "std": 169.971,
+      "median": 899.0,
+      "q25": 754.0,
+      "q75": 1040.0,
+      "skew": 0.005
+    },
+    "HRV_SDNN": {
+      "min": 20.0,
+      "max": 119.0,
+      "mean": 69.746,
+      "std": 28.785,
+      "median": 70.0,
+      "q25": 45.0,
+      "q75": 95.0,
+      "skew": -0.004
+    },
+    "HRV_RMSSD": {
+      "min": 15.0,
+      "max": 99.0,
+      "mean": 56.438,
+      "std": 24.911,
+      "median": 56.0,
+      "q25": 35.0,
+      "q75": 78.0,
+      "skew": 0.042
+    },
+    "R_Peak_Amplitude": {
+      "min": 0.5,
+      "max": 3.0,
+      "mean": 1.745,
+      "std": 0.712,
+      "median": 1.73,
+      "q25": 1.15,
+      "q75": 2.35,
+      "skew": 0.023
+    },
+    "S_Wave_Amplitude": {
+      "min": -2.5,
+      "max": -0.1,
+      "mean": -1.295,
+      "std": 0.698,
+      "median": -1.28,
+      "q25": -1.91,
+      "q75": -0.68,
+      "skew": -0.029
+    }
+  },
+  "anova_association_test": {
+    "Age": {
+      "f_statistic": 0.7542,
+      "p_value": 0.5198,
+      "statistically_significant_05": false
+    },
+    "Heart_Rate": {
+      "f_statistic": 0.1778,
+      "p_value": 0.9115,
+      "statistically_significant_05": false
+    },
+    "Systolic_BP": {
+      "f_statistic": 0.6984,
+      "p_value": 0.5529,
+      "statistically_significant_05": false
+    },
+    "Diastolic_BP": {
+      "f_statistic": 1.5683,
+      "p_value": 0.1949,
+      "statistically_significant_05": false
+    },
+    "Cholesterol": {
+      "f_statistic": 0.3438,
+      "p_value": 0.7936,
+      "statistically_significant_05": false
+    },
+    "Glucose": {
+      "f_statistic": 1.3283,
+      "p_value": 0.2633,
+      "statistically_significant_05": false
+    },
+    "Troponin": {
+      "f_statistic": 0.8163,
+      "p_value": 0.4847,
+      "statistically_significant_05": false
+    },
+    "PR_Interval": {
+      "f_statistic": 1.3641,
+      "p_value": 0.2518,
+      "statistically_significant_05": false
+    },
+    "QRS_Duration": {
+      "f_statistic": 0.9093,
+      "p_value": 0.4356,
+      "statistically_significant_05": false
+    },
+    "QT_Interval": {
+      "f_statistic": 1.3413,
+      "p_value": 0.2591,
+      "statistically_significant_05": false
+    },
+    "P_Wave_Duration": {
+      "f_statistic": 1.9344,
+      "p_value": 0.1218,
+      "statistically_significant_05": false
+    },
+    "T_Wave_Duration": {
+      "f_statistic": 0.1849,
+      "p_value": 0.9067,
+      "statistically_significant_05": false
+    },
+    "ST_Segment_Level": {
+      "f_statistic": 0.6584,
+      "p_value": 0.5776,
+      "statistically_significant_05": false
+    },
+    "RR_Interval": {
+      "f_statistic": 0.6176,
+      "p_value": 0.6036,
+      "statistically_significant_05": false
+    },
+    "HRV_SDNN": {
+      "f_statistic": 0.6347,
+      "p_value": 0.5926,
+      "statistically_significant_05": false
+    },
+    "HRV_RMSSD": {
+      "f_statistic": 0.4469,
+      "p_value": 0.7195,
+      "statistically_significant_05": false
+    },
+    "R_Peak_Amplitude": {
+      "f_statistic": 1.6009,
+      "p_value": 0.187,
+      "statistically_significant_05": false
+    },
+    "S_Wave_Amplitude": {
+      "f_statistic": 0.4253,
+      "p_value": 0.7348,
+      "statistically_significant_05": false
+    }
+  },
+  "potential_target_leakage": [],
+  "dataset_provenance": "Synthetic clinical cohort generated within physiological boundary conditions"
+}

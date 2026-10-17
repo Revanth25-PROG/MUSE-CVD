@@ -66,7 +66,7 @@ export default function Navbar({ activePage, setActivePage }) {
                 <>
                   <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
                   <span className="w-2 h-2 rounded-full bg-emerald-500 -ml-3.5" />
-                  <span>API Active (Port 8008)</span>
+                  <span>API Online</span>
                 </>
               ) : apiStatus === 'checking' ? (
                 <>

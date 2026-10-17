@@ -116,7 +116,7 @@ export default function PredictionWorkspace() {
       setExplanation(expResult);
     } catch (err) {
       console.error(err);
-      setError(err.response?.data?.detail || "Inference error: verify that backend is running on port 8000.");
+      setError(err.response?.data?.detail || err.message || "Inference error: unable to connect to the backend server. If using Render free tier, please allow 30-50 seconds for cold-start wake-up.");
     } finally {
       setLoading(false);
     }

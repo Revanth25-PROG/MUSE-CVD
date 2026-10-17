@@ -1,17 +1,9 @@
 import axios from 'axios';
 
-// Priority 1: Read Vercel production environment variable VITE_API_URL (e.g., https://muse-cvd-backend.onrender.com)
-// Priority 2: In local Vite dev server, use the '/api' proxy
-// Priority 3: Fallback to direct local backend
 const getApiBase = () => {
   if (import.meta.env.VITE_API_URL) {
     const rawUrl = import.meta.env.VITE_API_URL.trim().replace(/\/$/, '');
     return rawUrl.endsWith('/api') ? rawUrl : `${rawUrl}/api`;
-  }
-  if (typeof window !== 'undefined') {
-    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-      return window.location.port !== '8008' ? '/api' : 'http://127.0.0.1:8008/api';
-    }
   }
   return '/api';
 };
@@ -23,7 +15,15 @@ const api = axios.create({
   headers: {
     'Content-Type': 'application/json'
   },
-  timeout: 25000 // Extended timeout to allow Render free tier spindown wake-ups
+  timeout: 30000 // Extended timeout for Render free tier sleep wake-up
+});
+
+// Intercept HTML fallback responses (when Vercel SPA rewrites /api/* to index.html before proxy connects)
+api.interceptors.response.use((response) => {
+  if (typeof response.data === 'string' && (response.data.trim().startsWith('<!doctype') || response.data.trim().startsWith('<html'))) {
+    return Promise.reject(new Error("API returned HTML instead of JSON"));
+  }
+  return response;
 });
 
 export const getHealth = async () => {

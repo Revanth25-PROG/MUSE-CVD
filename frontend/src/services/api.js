@@ -56,13 +56,28 @@ export const getModelMetrics = async () => {
   return res.data;
 };
 
+export const getModelMetricsV2 = async () => {
+  const res = await api.get('/model/metrics-v2');
+  return res.data;
+};
+
 export const getModelComparison = async () => {
   const res = await api.get('/model/comparison');
   return res.data;
 };
 
+export const getBenchmarkV2 = async () => {
+  const res = await api.get('/model/benchmark-v2');
+  return res.data;
+};
+
 export const getFeatureFusion = async () => {
   const res = await api.get('/model/feature-fusion');
+  return res.data;
+};
+
+export const getFeatureFusionV2 = async () => {
+  const res = await api.get('/model/feature-fusion-v2');
   return res.data;
 };
 

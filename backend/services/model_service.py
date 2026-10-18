@@ -202,3 +202,31 @@ class ModelService:
             with open(path, "r", encoding="utf-8") as f:
                 return json.load(f)
         return {"status": "Not evaluated yet"}
+
+    def get_test_metrics_v2(self) -> Dict[str, Any]:
+        path = os.path.join(self.metrics_dir, "final_test_metrics_v2.json")
+        if os.path.exists(path):
+            with open(path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        return self.get_test_metrics()
+
+    def get_improved_benchmark(self) -> Any:
+        path = os.path.join(self.metrics_dir, "improved_model_benchmark.json")
+        if os.path.exists(path):
+            with open(path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        return self.get_baseline_comparison()
+
+    def get_calibration_v2(self) -> Dict[str, Any]:
+        path = os.path.join(self.metrics_dir, "calibration_results_v2.json")
+        if os.path.exists(path):
+            with open(path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        return self.get_calibration()
+
+    def get_feature_fusion_v2(self) -> Any:
+        path = os.path.join(self.metrics_dir, "feature_fusion_results_v2.json")
+        if os.path.exists(path):
+            with open(path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        return self.get_feature_fusion()

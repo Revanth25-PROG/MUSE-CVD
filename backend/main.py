@@ -122,6 +122,30 @@ def get_calibration():
     return model_service.get_calibration()
 
 
+@app.get("/api/model/metrics-v2")
+def get_model_metrics_v2():
+    """Returns v2 held-out test evaluation metrics and confusion matrix."""
+    return model_service.get_test_metrics_v2()
+
+
+@app.get("/api/model/benchmark-v2")
+def get_benchmark_v2():
+    """Returns the 10-model leakage-free benchmark comparison."""
+    return model_service.get_improved_benchmark()
+
+
+@app.get("/api/model/calibration-v2")
+def get_calibration_v2():
+    """Returns v2 calibration metrics (Platt Sigmoid vs Isotonic)."""
+    return model_service.get_calibration_v2()
+
+
+@app.get("/api/model/feature-fusion-v2")
+def get_feature_fusion_v2():
+    """Returns v2 multimodal feature fusion ablation results."""
+    return model_service.get_feature_fusion_v2()
+
+
 @app.get("/api/model/shap-global")
 def get_shap_global():
     """Returns global feature importance rankings derived from SHAP TreeExplainer."""

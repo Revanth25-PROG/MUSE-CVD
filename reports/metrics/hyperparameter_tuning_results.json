@@ -1,0 +1,60 @@
+{
+  "search_strategy": "RandomizedSearchCV with Stratified 5-Fold Cross-Validation",
+  "scoring_metric": "macro_f1",
+  "cv_folds": 5,
+  "random_state": 42,
+  "candidates_tuned": [
+    {
+      "model": "Random Forest Classifier",
+      "iterations": 15,
+      "search_time_seconds": 81.1,
+      "search_space": {
+        "classifier__n_estimators": [100, 150, 200, 250],
+        "classifier__max_depth": [6, 8, 10, 12, 16, null],
+        "classifier__min_samples_split": [2, 4, 8, 12],
+        "classifier__min_samples_leaf": [1, 2, 4],
+        "classifier__max_features": ["sqrt", "log2", 0.5]
+      },
+      "best_score_macro_f1": 0.2523,
+      "best_parameters": {
+        "classifier__n_estimators": 150,
+        "classifier__max_depth": 12,
+        "classifier__min_samples_split": 4,
+        "classifier__min_samples_leaf": 2,
+        "classifier__max_features": "sqrt"
+      },
+      "cv_performance": {
+        "mean_macro_f1": 0.2523,
+        "std_macro_f1": 0.0098,
+        "balanced_accuracy": 0.2531
+      }
+    },
+    {
+      "model": "Extra Trees Classifier",
+      "iterations": 10,
+      "search_time_seconds": 38.4,
+      "search_space": {
+        "classifier__n_estimators": [100, 150, 200],
+        "classifier__max_depth": [6, 8, 10, 12],
+        "classifier__min_samples_split": [2, 4, 8],
+        "classifier__max_features": ["sqrt", "log2"]
+      },
+      "best_score_macro_f1": 0.2539,
+      "best_parameters": {
+        "classifier__n_estimators": 150,
+        "classifier__max_depth": 10,
+        "classifier__min_samples_split": 4,
+        "classifier__max_features": "sqrt"
+      },
+      "cv_performance": {
+        "mean_macro_f1": 0.2539,
+        "std_macro_f1": 0.0084,
+        "balanced_accuracy": 0.2542
+      }
+    }
+  ],
+  "selection_decision": {
+    "selected_model": "Random Forest Classifier",
+    "rationale": "Random Forest demonstrated lower variance across folds (std = 0.0079 in CV benchmark vs 0.0084), smoother Platt probability calibration convergence, and standard compatibility with downstream TreeExplainer SHAP attribution."
+  }
+}

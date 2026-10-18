@@ -1,0 +1,46 @@
+{
+  "model_name": "MUSE-CVD Random Forest Ensemble",
+  "version": "2.0.0",
+  "training_date": "2026-10-18 18:38:59",
+  "best_hyperparameters": {
+    "classifier__n_estimators": 150,
+    "classifier__min_samples_split": 4,
+    "classifier__min_samples_leaf": 2,
+    "classifier__max_features": "sqrt",
+    "classifier__max_depth": 12
+  },
+  "held_out_test_metrics": {
+    "accuracy": 0.2615,
+    "macro_f1": 0.2101,
+    "roc_auc_ovr": 0.5159,
+    "expected_calibration_error": 0.0017,
+    "multiclass_brier": 0.7494
+  },
+  "classes": [
+    "Abnormal_Heartbeat",
+    "Myocardial_Infarction",
+    "Normal",
+    "Post_MI_History"
+  ],
+  "features": [
+    "Age",
+    "Gender",
+    "Heart_Rate",
+    "Systolic_BP",
+    "Diastolic_BP",
+    "Cholesterol",
+    "Glucose",
+    "Troponin",
+    "PR_Interval",
+    "QRS_Duration",
+    "QT_Interval",
+    "P_Wave_Duration",
+    "T_Wave_Duration",
+    "ST_Segment_Level",
+    "RR_Interval",
+    "HRV_SDNN",
+    "HRV_RMSSD",
+    "R_Peak_Amplitude",
+    "S_Wave_Amplitude"
+  ]
+}

@@ -1,0 +1,399 @@
+{
+  "dataset_metadata": {
+    "file_path": "data/cardiovascular_dataset_cleaned.csv",
+    "total_records": 4327,
+    "total_features": 19,
+    "total_columns": 20,
+    "numerical_features_count": 18,
+    "categorical_features_count": 1,
+    "target_classes_count": 4,
+    "has_patient_id": false,
+    "missing_values_total": 0,
+    "duplicate_records_total": 0
+  },
+  "provenance_and_data_nature": {
+    "record_type": "Synthetic / Simulated Cohort",
+    "feature_distribution_profile": "Uniform bounded distributions matching clinical reference intervals",
+    "target_coupling": "Statistically decoupled (independent random multiclass assignment)",
+    "average_pairwise_correlation": 0.0111,
+    "max_pairwise_correlation": 0.0446,
+    "theoretical_chance_accuracy": 0.25,
+    "empirical_bayes_ceiling_accuracy": 0.25
+  },
+  "target_distribution": {
+    "counts": {
+      "Normal": 1113,
+      "Abnormal_Heartbeat": 1092,
+      "Post_MI_History": 1091,
+      "Myocardial_Infarction": 1031
+    },
+    "proportions": {
+      "Normal": 0.2572,
+      "Abnormal_Heartbeat": 0.2524,
+      "Post_MI_History": 0.2521,
+      "Myocardial_Infarction": 0.2383
+    }
+  },
+  "gender_distribution": {
+    "counts": {
+      "Female": 2196,
+      "Male": 2131
+    },
+    "proportions": {
+      "Female": 0.5075,
+      "Male": 0.4925
+    }
+  },
+  "feature_profiles": {
+    "Age": {
+      "dtype": "int64",
+      "min": 30.0,
+      "max": 84.0,
+      "mean": 57.4534,
+      "std": 15.8717,
+      "median": 57.0,
+      "iqr": 27.0,
+      "n_unique": 55,
+      "ks_stat_uniform": 0.03,
+      "ks_pvalue_uniform": 0.0008
+    },
+    "Heart_Rate": {
+      "dtype": "int64",
+      "min": 55.0,
+      "max": 139.0,
+      "mean": 97.4054,
+      "std": 24.5809,
+      "median": 98.0,
+      "iqr": 43.0,
+      "n_unique": 85,
+      "ks_stat_uniform": 0.0207,
+      "ks_pvalue_uniform": 0.0485
+    },
+    "Systolic_BP": {
+      "dtype": "int64",
+      "min": 90.0,
+      "max": 179.0,
+      "mean": 134.0296,
+      "std": 25.9633,
+      "median": 134.0,
+      "iqr": 45.0,
+      "n_unique": 90,
+      "ks_stat_uniform": 0.0198,
+      "ks_pvalue_uniform": 0.0665
+    },
+    "Diastolic_BP": {
+      "dtype": "int64",
+      "min": 60.0,
+      "max": 109.0,
+      "mean": 84.3788,
+      "std": 14.5549,
+      "median": 84.0,
+      "iqr": 25.0,
+      "n_unique": 50,
+      "ks_stat_uniform": 0.0283,
+      "ks_pvalue_uniform": 0.0019
+    },
+    "Cholesterol": {
+      "dtype": "int64",
+      "min": 150.0,
+      "max": 319.0,
+      "mean": 234.1532,
+      "std": 48.4103,
+      "median": 234.0,
+      "iqr": 85.0,
+      "n_unique": 170,
+      "ks_stat_uniform": 0.015,
+      "ks_pvalue_uniform": 0.28
+    },
+    "Glucose": {
+      "dtype": "int64",
+      "min": 70.0,
+      "max": 199.0,
+      "mean": 134.7976,
+      "std": 37.7018,
+      "median": 135.0,
+      "iqr": 66.0,
+      "n_unique": 130,
+      "ks_stat_uniform": 0.0148,
+      "ks_pvalue_uniform": 0.2941
+    },
+    "Troponin": {
+      "dtype": "float64",
+      "min": 0.001,
+      "max": 2.5,
+      "mean": 1.2692,
+      "std": 0.721,
+      "median": 1.285,
+      "iqr": 1.226,
+      "n_unique": 2067,
+      "ks_stat_uniform": 0.0205,
+      "ks_pvalue_uniform": 0.0512
+    },
+    "PR_Interval": {
+      "dtype": "int64",
+      "min": 120.0,
+      "max": 219.0,
+      "mean": 169.905,
+      "std": 28.6411,
+      "median": 171.0,
+      "iqr": 49.0,
+      "n_unique": 100,
+      "ks_stat_uniform": 0.0187,
+      "ks_pvalue_uniform": 0.0961
+    },
+    "QRS_Duration": {
+      "dtype": "int64",
+      "min": 70.0,
+      "max": 159.0,
+      "mean": 114.1199,
+      "std": 25.8791,
+      "median": 114.0,
+      "iqr": 44.0,
+      "n_unique": 90,
+      "ks_stat_uniform": 0.017,
+      "ks_pvalue_uniform": 0.1628
+    },
+    "QT_Interval": {
+      "dtype": "int64",
+      "min": 300.0,
+      "max": 499.0,
+      "mean": 398.7271,
+      "std": 57.9549,
+      "median": 399.0,
+      "iqr": 100.0,
+      "n_unique": 200,
+      "ks_stat_uniform": 0.018,
+      "ks_pvalue_uniform": 0.1189
+    },
+    "P_Wave_Duration": {
+      "dtype": "int64",
+      "min": 80.0,
+      "max": 119.0,
+      "mean": 99.6654,
+      "std": 11.5267,
+      "median": 100.0,
+      "iqr": 20.0,
+      "n_unique": 40,
+      "ks_stat_uniform": 0.0282,
+      "ks_pvalue_uniform": 0.002
+    },
+    "T_Wave_Duration": {
+      "dtype": "int64",
+      "min": 120.0,
+      "max": 199.0,
+      "mean": 159.1562,
+      "std": 23.1584,
+      "median": 159.0,
+      "iqr": 40.0,
+      "n_unique": 80,
+      "ks_stat_uniform": 0.0203,
+      "ks_pvalue_uniform": 0.0562
+    },
+    "ST_Segment_Level": {
+      "dtype": "float64",
+      "min": -0.2,
+      "max": 0.5,
+      "mean": 0.1513,
+      "std": 0.2017,
+      "median": 0.155,
+      "iqr": 0.3485,
+      "n_unique": 699,
+      "ks_stat_uniform": 0.0117,
+      "ks_pvalue_uniform": 0.5907
+    },
+    "RR_Interval": {
+      "dtype": "int64",
+      "min": 600.0,
+      "max": 1199.0,
+      "mean": 897.7638,
+      "std": 169.9711,
+      "median": 899.0,
+      "iqr": 286.0,
+      "n_unique": 598,
+      "ks_stat_uniform": 0.0173,
+      "ks_pvalue_uniform": 0.1466
+    },
+    "HRV_SDNN": {
+      "dtype": "int64",
+      "min": 20.0,
+      "max": 119.0,
+      "mean": 69.7465,
+      "std": 28.7845,
+      "median": 70.0,
+      "iqr": 50.0,
+      "n_unique": 100,
+      "ks_stat_uniform": 0.0133,
+      "ks_pvalue_uniform": 0.4265
+    },
+    "HRV_RMSSD": {
+      "dtype": "int64",
+      "min": 15.0,
+      "max": 99.0,
+      "mean": 56.4377,
+      "std": 24.9108,
+      "median": 56.0,
+      "iqr": 43.0,
+      "n_unique": 85,
+      "ks_stat_uniform": 0.0254,
+      "ks_pvalue_uniform": 0.0075
+    },
+    "R_Peak_Amplitude": {
+      "dtype": "float64",
+      "min": 0.5,
+      "max": 3.0,
+      "mean": 1.7451,
+      "std": 0.7124,
+      "median": 1.73,
+      "iqr": 1.2,
+      "n_unique": 251,
+      "ks_stat_uniform": 0.0153,
+      "ks_pvalue_uniform": 0.2632
+    },
+    "S_Wave_Amplitude": {
+      "dtype": "float64",
+      "min": -2.5,
+      "max": -0.1,
+      "mean": -1.2951,
+      "std": 0.6983,
+      "median": -1.28,
+      "iqr": 1.23,
+      "n_unique": 241,
+      "ks_stat_uniform": 0.0147,
+      "ks_pvalue_uniform": 0.301
+    }
+  },
+  "feature_target_statistical_independence": {
+    "Age": {
+      "anova_f_stat": 0.7542,
+      "anova_p_val": 0.5198,
+      "kruskal_h_stat": 2.2824,
+      "kruskal_p_val": 0.5159,
+      "eta_squared": 0.000523
+    },
+    "Heart_Rate": {
+      "anova_f_stat": 0.1778,
+      "anova_p_val": 0.9115,
+      "kruskal_h_stat": 0.5762,
+      "kruskal_p_val": 0.9019,
+      "eta_squared": 0.000123
+    },
+    "Systolic_BP": {
+      "anova_f_stat": 0.6984,
+      "anova_p_val": 0.5529,
+      "kruskal_h_stat": 2.1135,
+      "kruskal_p_val": 0.5492,
+      "eta_squared": 0.000484
+    },
+    "Diastolic_BP": {
+      "anova_f_stat": 1.5683,
+      "anova_p_val": 0.1949,
+      "kruskal_h_stat": 4.6583,
+      "kruskal_p_val": 0.1986,
+      "eta_squared": 0.001087
+    },
+    "Cholesterol": {
+      "anova_f_stat": 0.3438,
+      "anova_p_val": 0.7936,
+      "kruskal_h_stat": 1.0339,
+      "kruskal_p_val": 0.793,
+      "eta_squared": 0.000239
+    },
+    "Glucose": {
+      "anova_f_stat": 1.3283,
+      "anova_p_val": 0.2633,
+      "kruskal_h_stat": 4.0003,
+      "kruskal_p_val": 0.2614,
+      "eta_squared": 0.000921
+    },
+    "Troponin": {
+      "anova_f_stat": 0.8163,
+      "anova_p_val": 0.4847,
+      "kruskal_h_stat": 2.4142,
+      "kruskal_p_val": 0.491,
+      "eta_squared": 0.000566
+    },
+    "PR_Interval": {
+      "anova_f_stat": 1.3641,
+      "anova_p_val": 0.2518,
+      "kruskal_h_stat": 4.2061,
+      "kruskal_p_val": 0.24,
+      "eta_squared": 0.000946
+    },
+    "QRS_Duration": {
+      "anova_f_stat": 0.9093,
+      "anova_p_val": 0.4356,
+      "kruskal_h_stat": 2.7817,
+      "kruskal_p_val": 0.4265,
+      "eta_squared": 0.000631
+    },
+    "QT_Interval": {
+      "anova_f_stat": 1.3413,
+      "anova_p_val": 0.2591,
+      "kruskal_h_stat": 3.9419,
+      "kruskal_p_val": 0.2678,
+      "eta_squared": 0.00093
+    },
+    "P_Wave_Duration": {
+      "anova_f_stat": 1.9344,
+      "anova_p_val": 0.1218,
+      "kruskal_h_stat": 5.7781,
+      "kruskal_p_val": 0.1229,
+      "eta_squared": 0.001341
+    },
+    "T_Wave_Duration": {
+      "anova_f_stat": 0.1849,
+      "anova_p_val": 0.9067,
+      "kruskal_h_stat": 0.5637,
+      "kruskal_p_val": 0.9047,
+      "eta_squared": 0.000128
+    },
+    "ST_Segment_Level": {
+      "anova_f_stat": 0.6584,
+      "anova_p_val": 0.5776,
+      "kruskal_h_stat": 2.0265,
+      "kruskal_p_val": 0.5669,
+      "eta_squared": 0.000457
+    },
+    "RR_Interval": {
+      "anova_f_stat": 0.6176,
+      "anova_p_val": 0.6036,
+      "kruskal_h_stat": 1.8497,
+      "kruskal_p_val": 0.6042,
+      "eta_squared": 0.000428
+    },
+    "HRV_SDNN": {
+      "anova_f_stat": 0.6347,
+      "anova_p_val": 0.5926,
+      "kruskal_h_stat": 1.8913,
+      "kruskal_p_val": 0.5953,
+      "eta_squared": 0.00044
+    },
+    "HRV_RMSSD": {
+      "anova_f_stat": 0.4469,
+      "anova_p_val": 0.7195,
+      "kruskal_h_stat": 1.3082,
+      "kruskal_p_val": 0.7272,
+      "eta_squared": 0.00031
+    },
+    "R_Peak_Amplitude": {
+      "anova_f_stat": 1.6009,
+      "anova_p_val": 0.187,
+      "kruskal_h_stat": 4.8442,
+      "kruskal_p_val": 0.1836,
+      "eta_squared": 0.00111
+    },
+    "S_Wave_Amplitude": {
+      "anova_f_stat": 0.4253,
+      "anova_p_val": 0.7348,
+      "kruskal_h_stat": 1.2649,
+      "kruskal_p_val": 0.7375,
+      "eta_squared": 0.000295
+    },
+    "Gender": {
+      "chi2_stat": 7.8423,
+      "chi2_p_val": 0.0494,
+      "dof": 3,
+      "cramers_v": 0.0426
+    }
+  }
+}

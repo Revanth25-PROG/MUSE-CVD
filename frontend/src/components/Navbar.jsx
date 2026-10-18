@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Activity, ShieldAlert, BarChart2, Database, Brain, Cpu, FileText, Info, CheckCircle2, AlertCircle } from 'lucide-react';
+import { Activity, ShieldAlert, BarChart2, Database, Brain, Cpu, FileText, Info, CheckCircle2, AlertCircle, Download } from 'lucide-react';
 import { getHealth } from '../services/api';
 
 export default function Navbar({ activePage, setActivePage }) {

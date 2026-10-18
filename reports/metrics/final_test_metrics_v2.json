@@ -1,0 +1,82 @@
+{
+  "model_architecture": "Random Forest Ensemble (Platt Calibrated v2)",
+  "evaluation_split": "Held-Out Test Set (N=650)",
+  "test_sample_size": 650,
+  "test_accuracy": 0.2615,
+  "test_balanced_accuracy": 0.2565,
+  "test_macro_precision": 0.1932,
+  "test_macro_recall": 0.2565,
+  "test_macro_f1": 0.2101,
+  "test_weighted_precision": 0.1962,
+  "test_weighted_recall": 0.2615,
+  "test_weighted_f1": 0.2137,
+  "test_roc_auc_ovr": 0.5159,
+  "expected_calibration_error": 0.0017,
+  "multiclass_brier_score": 0.7494,
+  "multiclass_log_loss": 1.3851,
+  "per_class_metrics": {
+    "Abnormal_Heartbeat": {
+      "precision": 0.2754,
+      "recall": 0.2805,
+      "f1_score": 0.2779,
+      "support": 164
+    },
+    "Myocardial_Infarction": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "support": 155
+    },
+    "Normal": {
+      "precision": 0.2654,
+      "recall": 0.5689,
+      "f1_score": 0.3619,
+      "support": 167
+    },
+    "Post_MI_History": {
+      "precision": 0.232,
+      "recall": 0.1768,
+      "f1_score": 0.2007,
+      "support": 164
+    }
+  },
+  "confusion_matrix": [
+    [
+      46,
+      0,
+      89,
+      29
+    ],
+    [
+      37,
+      0,
+      86,
+      32
+    ],
+    [
+      37,
+      0,
+      95,
+      35
+    ],
+    [
+      47,
+      0,
+      88,
+      29
+    ]
+  ],
+  "classes": [
+    "Abnormal_Heartbeat",
+    "Myocardial_Infarction",
+    "Normal",
+    "Post_MI_History"
+  ],
+  "baseline_comparison": {
+    "v1_baseline_accuracy": 0.2662,
+    "v1_baseline_macro_f1": 0.2557,
+    "v2_accuracy_delta": -0.0047,
+    "v2_macro_f1_delta": -0.0456,
+    "statistical_significance": "Within finite-sample binomial error margin (+/- 1.70% SE)"
+  }
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "modality_group": "A. ECG Features Only",
+    "feature_count": 11,
+    "cv_accuracy_mean": 24.78,
+    "cv_accuracy_std": 0.34,
+    "cv_accuracy_se": 0.15,
+    "cv_macro_f1_mean": 0.2428,
+    "cv_macro_f1_std": 0.0034
+  },
+  {
+    "modality_group": "B. Clinical & Lab Features Only",
+    "feature_count": 8,
+    "cv_accuracy_mean": 24.97,
+    "cv_accuracy_std": 1.51,
+    "cv_accuracy_se": 0.68,
+    "cv_macro_f1_mean": 0.2441,
+    "cv_macro_f1_std": 0.0126
+  },
+  {
+    "modality_group": "C. Demographic Feature Only",
+    "feature_count": 1,
+    "cv_accuracy_mean": 26.87,
+    "cv_accuracy_std": 2.3,
+    "cv_accuracy_se": 1.03,
+    "cv_macro_f1_mean": 0.1779,
+    "cv_macro_f1_std": 0.0153
+  },
+  {
+    "modality_group": "D. Clinical + ECG Features",
+    "feature_count": 18,
+    "cv_accuracy_mean": 25.48,
+    "cv_accuracy_std": 1.71,
+    "cv_accuracy_se": 0.76,
+    "cv_macro_f1_mean": 0.2506,
+    "cv_macro_f1_std": 0.0184
+  },
+  {
+    "modality_group": "E. All 19 Multimodal Predictors",
+    "feature_count": 19,
+    "cv_accuracy_mean": 24.45,
+    "cv_accuracy_std": 0.74,
+    "cv_accuracy_se": 0.33,
+    "cv_macro_f1_mean": 0.2389,
+    "cv_macro_f1_std": 0.0074
+  }
+]

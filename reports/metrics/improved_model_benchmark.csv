@@ -1,0 +1,12 @@
+model_name,cv_accuracy_mean,cv_accuracy_std,cv_balanced_accuracy_mean,cv_macro_f1_mean,cv_macro_f1_std,cv_macro_precision_mean,cv_macro_recall_mean,cv_folds,fit_time_seconds
+K-Nearest Neighbors (K=25),26.24,1.92,26.16,0.2602,0.0198,0.2605,0.2616,5,1.63
+Support Vector Machine (RBF),25.84,0.91,25.74,0.2557,0.0094,0.2567,0.2574,5,16.81
+HistGradientBoosting,25.48,0.88,25.4,0.2532,0.0083,0.254,0.254,5,5.25
+Dummy (Stratified),25.29,1.9,25.22,0.2521,0.0187,0.2524,0.2522,5,12.01
+Logistic Regression (L2),25.21,1.2,25.02,0.2446,0.0118,0.2479,0.2502,5,12.02
+Dummy (Uniform),24.83,0.91,24.81,0.2478,0.0093,0.2484,0.2481,5,8.34
+Extra Trees,24.75,0.61,24.53,0.2385,0.0067,0.2422,0.2453,5,3.47
+Random Forest,24.67,0.79,24.46,0.2385,0.0072,0.2408,0.2446,5,5.16
+Multi-Layer Perceptron (MLP),24.56,1.68,24.45,0.2402,0.0162,0.2471,0.2445,5,3.2
+XGBoost,24.48,0.86,24.31,0.2397,0.0083,0.2416,0.2431,5,3.57
+Gradient Boosting,24.45,1.05,24.29,0.2392,0.0121,0.2412,0.2429,5,19.88
